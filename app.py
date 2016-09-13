@@ -10,25 +10,26 @@ from camera_pi import Camera
 
 app = Flask(__name__)
 
+car_t = 0.1
 
 @app.route('/go')
 def car_go():
-    Go(0.5)
+    Go(car_t*3)
     return render_template('index.html')
 
 @app.route('/back')
 def car_back():
-    Back(0.5)
+    Back(car_t*3)
     return render_template('index.html')
 
 @app.route('/turn_r')
 def car_turnR():
-    TurnRight(0.5)
+    TurnRight(car_t)
     return render_template('index.html')
 
 @app.route('/turn_l')
 def car_turnL():
-    TurnLeft(0.5)
+    TurnLeft(car_t)
     return render_template('index.html')
 
 @app.route('/')
