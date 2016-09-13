@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>Motion Cam</title>
+</head>
+<body>
+<h1>Motion Cam</h1>
+<img src="{{ url_for('video_feed') }}"><br>
+
+
+<table>
+    <tr>
+        <td></td>
+        <td onclick="javascript:location.href='go'">Go</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td onclick="javascript:location.href='left'">Left</td>
+        <td></td>
+        <td onclick="javascript:location.href='right'">Right</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td  onclick="javascript:location.href='back'">Back</td>
+        <td></td>
+    </tr>
+
+</table>
+
+</body>
+</html>
