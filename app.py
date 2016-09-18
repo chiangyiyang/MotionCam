@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 from flask import Flask, render_template, Response
-from car import *
+from car4w import *
 
 # emulated camera
 # from camera import Camera
@@ -10,7 +10,7 @@ from camera_pi import Camera
 
 app = Flask(__name__)
 
-car_t = 0.1
+car_t = 0.2
 
 @app.route('/go')
 def car_go():
