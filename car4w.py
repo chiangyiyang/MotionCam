@@ -8,15 +8,15 @@ pin2 = 5
 pin3 = 7
 pin4 = 8
 GPIO.setup(pin1, GPIO.OUT)
-GPIO.setup(pin2, GPIO.OUT)
-GPIO.setup(pin3, GPIO.OUT)
-GPIO.setup(pin4, GPIO.OUT)
 GPIO.output(pin1, GPIO.LOW)
+GPIO.setup(pin2, GPIO.OUT)
 GPIO.output(pin2, GPIO.LOW)
+GPIO.setup(pin3, GPIO.OUT)
 GPIO.output(pin3, GPIO.LOW)
+GPIO.setup(pin4, GPIO.OUT)
 GPIO.output(pin4, GPIO.LOW)
 
-swap_t = 0.1
+swap_t = 0.04
 
 def LeftBackStop():
     GPIO.output(pin1, GPIO.LOW)
@@ -123,7 +123,7 @@ def Back(t):
 # time.sleep(1)
 #
 #
-#
+
 # RightGo()
 # time.sleep(0.04)
 # LeftGo()
